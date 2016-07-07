@@ -15,6 +15,11 @@
     {{ post.title }} - upvotes: {{ post.upvotes }}
   </div>
 
+  <form>
+    <input type="text" ng-model="title">
+    <button ng-click="addPost()">Add Post</button>
+  </form>
+
   <script id="__bs_script__">//<![CDATA[
     document.write("<script async src='http://HOST:3000/browser-sync/browser-sync-client.2.13.0.js'><\/script>".replace("HOST", location.hostname));
   //]]></script>
