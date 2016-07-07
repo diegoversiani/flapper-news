@@ -12,4 +12,38 @@
  *
  *= require_tree .
  *= require_self
+ *= require skeleton-scss
+ *= require font-awesome
  */
+
+form
+{
+    margin-top: 3rem;
+}
+
+.fa-thumbs-up
+{
+    cursor: pointer;
+}
+
+.post__title
+{
+    font-size: 2rem;
+}
+
+.post__upvotes
+{
+    display: inline-block;
+
+    min-width: 2rem;
+    padding: .3rem;
+
+    text-align: center;
+
+    border: solid 1px #ddd;
+}
+
+.post__comment-body
+{
+    margin-left: 2.5rem;
+}

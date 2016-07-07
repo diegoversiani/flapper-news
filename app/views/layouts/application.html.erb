@@ -2,35 +2,9 @@
 <html>
 <head>
   <title>Flapper News</title>
-
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css" rel="stylesheet">
-
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
-
-  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.19/angular.min.js"></script>
-  <script src="//cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.10/angular-ui-router.js"></script>
-
   <%= stylesheet_link_tag    'application', media: 'all' %>
   <%= javascript_include_tag 'application' %>
   <%= csrf_meta_tags %>
-
-  <style type="text/css">
-    form { margin-top: 3rem; }
-
-    .fa-thumbs-up { cursor: pointer; }
-
-    .post__title { font-size: 2rem; }
-    .post__upvotes {
-      display: inline-block;
-      border: solid 1px #ddd;
-      padding: 0.3rem;
-      min-width: 2rem;
-      text-align: center;
-    }
-
-    .post__comment-body { margin-left: 2.5rem; }
-
-  </style>
 </head>
 <body ng-app="flapperNews">
 
