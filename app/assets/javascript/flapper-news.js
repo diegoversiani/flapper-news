@@ -10,13 +10,13 @@ angular.module('flapperNews', ['ui.router'])
         
         .state( 'home', {
           url: '/home',
-          templateUrl: 'partial-home.html',
+          templateUrl: '/partials/partial-home.html',
           controller: 'HomeController'
         })
 
         .state( 'post', {
           url: '/post/{id}',
-          templateUrl: 'partial-post.html',
+          templateUrl: '/partials/partial-post.html',
           controller: 'PostsController'
         })
         ;
