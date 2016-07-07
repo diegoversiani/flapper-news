@@ -1,8 +1,33 @@
-angular.module('flapperNews', [])
+angular.module('flapperNews', ['ui.router'])
+
+  .config([
+    '$stateProvider',
+    '$urlRouterProvider',
+    function ( $stateProvider, $urlRouterProvider ) {
+      $stateProvider
+        .state( 'home', {
+          url: '/home',
+          templateUrl: 'home.html',
+          controller: 'MainController'
+        });
+
+      $urlRouterProvider.otherwise( 'home' );
+    }
+  ])
+
+  .factory('posts', [function () {
+    var p = {
+      posts: []
+    };
+
+    return p;
+  }])
+
   .controller('MainController', [
   '$scope',
-  function($scope){
-    $scope.test = "Hello World!";
+  'posts',
+  function($scope, posts){
+    $scope.posts = posts.posts;
 
     $scope.posts = [
       { title: 'post 1', upvotes: 5 },
