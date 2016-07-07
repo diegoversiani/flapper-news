@@ -13,6 +13,8 @@
   <script type="text/javascript" src="app.js"></script>
 
   <style type="text/css">
+    form { margin-top: 3rem; }
+
     .fa-thumbs-up { cursor: pointer; }
 
     .post__title { font-size: 2rem; }
@@ -24,15 +26,13 @@
       text-align: center;
     }
 
-    .post-form { margin-top: 3rem; }
+    .post__comment-body { margin-left: 2.5rem; }
+
   </style>
 </head>
 <body ng-app="flapperNews">
 
   <ui-view></ui-view>
 
-  <script id="__bs_script__">//<![CDATA[
-    document.write("<script async src='http://HOST:3000/browser-sync/browser-sync-client.2.13.0.js'><\/script>".replace("HOST", location.hostname));
-  //]]></script>
 </body>
 </html>
