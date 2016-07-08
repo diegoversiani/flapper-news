@@ -7,7 +7,7 @@
   <div class="post__comment-list">
     <div class="post__comment" ng-repeat="comment in post.comments | orderBy: '-upvotes'">
       <span class="post__comment-upvotes upvotes" ng-click="incrementUpvotes(post, comment)"><i class="fa fa-thumbs-up"></i> {{ comment.upvotes }}</span>
-      by {{ comment.author }}
+      by {{ comment.user.username }}
 
       <div class="post__comment-body">
         {{ comment.body }}
