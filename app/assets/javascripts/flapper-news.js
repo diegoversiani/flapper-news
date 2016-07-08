@@ -8,6 +8,14 @@ angular.module('flapperNews', ['ui.router', 'templates'])
       $stateProvider
         
         .state( 'home', {
+          resolve: {
+            postsPromise: [
+              'posts',
+              function(posts) {
+                return posts.getAll();
+              }
+            ]
+          },
           url: '/home',
           templateUrl: 'home/_home.html',
           controller: 'HomeController'
