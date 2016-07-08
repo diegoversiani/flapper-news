@@ -9,7 +9,7 @@
   },
   "scripts": {
     "start": "node index.js",
-    "postinstall": "bower install"
+    "preinstall": "bower install"
   },
   "repository": {
     "type": "git",
