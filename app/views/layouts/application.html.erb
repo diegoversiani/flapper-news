@@ -9,7 +9,12 @@
 <body ng-app="flapperNews">
 
   <div class="container">
-  	<ui-view></ui-view>
+    <div class="site-title">
+      <h4>Flapper News</h4>
+    </div>
+    <div ng-include="'nav/_nav.html'"></div>
+  	
+    <ui-view></ui-view>
   </div>
 
 </body>

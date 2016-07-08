@@ -17,6 +17,9 @@ gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
 # Use responders
 gem 'responders', '~> 2.0'
+
+gem 'devise', '~> 3.4.0'
+
 # Use angular-rails-templates to convert templates into js files
 gem 'angular-rails-templates'
 # Use angular-rails-templates to convert templates into js files

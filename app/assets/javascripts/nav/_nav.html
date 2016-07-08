@@ -1,0 +1,9 @@
+<nav role="navigation">
+  <ul class="menu">
+    <li class="menu__item"><a href="#/home">Home</a></li>
+    <li class="menu__item" ng-hide="signedIn()"><a href="#/login">Log In</a></li>
+    <li class="menu__item" ng-hide="signedIn()"><a href="#/register">Register</a></li>
+    <li class="menu__item" ng-show="signedIn()">{{ user.username }}</li>
+    <li class="menu__item" ng-show="signedIn()"><a ng-click="logout()">Log Out</a></li>
+  </ul>
+</nav>

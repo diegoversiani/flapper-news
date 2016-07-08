@@ -21,29 +21,34 @@ form
     margin-top: 3rem;
 }
 
-.fa-thumbs-up
+.upvotes
 {
-    cursor: pointer;
+  cursor: pointer;
+  display: inline-block;
+
+  min-width: 2rem;
+  padding: .3rem 1rem;
+
+  text-align: center;
+
+  border: solid 1px #ddd;
 }
 
 .post__title
 {
-    font-size: 2rem;
-}
-
-.post__upvotes
-{
-    display: inline-block;
-
-    min-width: 2rem;
-    padding: .3rem;
-
-    text-align: center;
-
-    border: solid 1px #ddd;
+  font-size: 2rem;
 }
 
 .post__comment-body
 {
-    margin-left: 2.5rem;
+  margin-left: 2.5rem;
+}
+
+.menu {
+  list-style: none;
+}
+
+.menu__item {
+  display: inline-block;
+  margin-left:
 }

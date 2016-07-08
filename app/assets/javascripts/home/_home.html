@@ -1,10 +1,9 @@
 <div class="page-header">
-  <h1>Flapper News</h1>
+  <h1>Home</h1>
 </div>
 
 <div class="post-list" ng-repeat="post in posts | orderBy: '-upvotes'">
-  <i ng-click="incrementUpvotes(post)" class="fa fa-thumbs-up"></i>
-  <span class="post__upvotes">{{ post.upvotes }}</span>
+  <span class="post__upvotes upvotes" ng-click="incrementUpvotes(post)"><i class="fa fa-thumbs-up"></i> {{ post.upvotes }}</span>
   <a class="post__title" ng-show="post.link" href="{{ post.link }}">{{ post.title }}</a>
   <span class="post__title" ng-hide="post.link">{{ post.title }}</span>
   <a class="post__comments" href="#/post/{{ post.id }}">comments</a>
