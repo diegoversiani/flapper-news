@@ -12,7 +12,13 @@
     <div class="site-title">
       <h4>Flapper News</h4>
     </div>
+
     <div ng-include="'nav/_nav.html'"></div>
+
+    <div class="message-box">
+       <p class="notice"><%= notice %></p>
+       <p class="alert"><%= alert %></p>
+    </div>
   	
     <ui-view></ui-view>
   </div>
