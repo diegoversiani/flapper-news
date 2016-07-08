@@ -2,10 +2,10 @@
   <ul class="menu">
     <li class="menu__item"><a href="#/home">Home</a></li>
   </ul>
-  <ul class="menu--user">
-    <li class="menu__item" ng-hide="signedIn()"><a href="#/login">Log In</a></li>
-    <li class="menu__item" ng-hide="signedIn()"><a href="#/register">Register</a></li>
+  <ul class="menu menu--user">
+    <li class="menu__item" ng-hide="signedIn()"><a class="button" href="#/login">Log In</a></li>
+    <li class="menu__item" ng-hide="signedIn()"><a class="button" href="#/register">Register</a></li>
     <li class="menu__item" ng-show="signedIn()">{{ user.username }}</li>
-    <li class="menu__item" ng-show="signedIn()"><a href="#/" ng-click="logout()">Log Out</a></li>
+    <li class="menu__item" ng-show="signedIn()"><a class="button" href="#/" ng-click="logout()">Log Out</a></li>
   </ul>
 </nav>

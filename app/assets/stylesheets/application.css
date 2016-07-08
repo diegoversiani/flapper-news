@@ -46,9 +46,10 @@ form
 
 .menu {
   list-style: none;
+  display: inline-block;
 }
 
 .menu__item {
   display: inline-block;
-  margin-left:
+  margin-left: .5rem;
 }
