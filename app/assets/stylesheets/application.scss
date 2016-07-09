@@ -12,9 +12,11 @@
  *
  *= require_tree .
  *= require skeleton-scss
- *= require _font-awesome-fix
  *= require_self
  */
+
+$fa-font-path: "//netdna.bootstrapcdn.com/font-awesome/4.6.3/fonts";
+@import "font-awesome/scss/font-awesome";
 
 form
 {
