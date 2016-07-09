@@ -49,6 +49,9 @@ Rails.application.configure do
   # Log detail is configurable on the server
   config.log_level = ENV['LOG_LEVEL'] ? ENV['LOG_LEVEL'].to_sym : ('info').to_sym
 
+  # Consider requests local is configurable on the server
+  config.consider_all_requests_local = ENV['CONSIDER_REQUESTS_LOCAL']
+
   # Prepend all log lines with the following tags.
   # config.log_tags = [ :subdomain, :uuid ]
 
