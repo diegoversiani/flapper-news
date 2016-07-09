@@ -21,7 +21,4 @@ test:
   password: password
 
 production:
-  <<: *default
-  host: ec2-174-129-212-133.compute-1.amazonaws.com
-  database: djkeb2qb76og8
-  username: tbkswiiridnujc
+  url: <%= ENV['DATABASE_URL'] %>
