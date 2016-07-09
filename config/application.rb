@@ -24,5 +24,7 @@ module FlapperNewsRails
     config.active_record.raise_in_transactional_callbacks = true
 
     config.assets.paths << Rails.root.join('vendor', 'assets', 'bower_components')
+
+    config.assets.precompile += %w( .svg .eot .woff .ttf )
   end
 end

@@ -1,0 +1,26 @@
+<div class="page-header">
+  <h1>{{ post.title }}</h1>
+</div>
+
+<div class="post">
+  
+  <div class="post__comment-list">
+    <div class="post__comment" ng-repeat="comment in post.comments | orderBy: '-upvotes'">
+      <span class="post__comment-upvotes upvotes" ng-click="incrementUpvotes(post, comment)"><i class="fa fa-thumbs-up"></i> {{ comment.upvotes }}</span>
+      by {{ comment.user.username }}
+
+      <div class="post__comment-body">
+        {{ comment.body }}
+      </div>
+
+    </div>
+  </div>
+
+  <form class="post__comment-form" ng-submit="addComment()">
+    <h3>Comment on this</h3>
+    <textarea placeholder="Your comment here" ng-model="body"></textarea>
+    <br>
+    <button type="submit">Comment</button>
+  </form>
+
+</div>
