@@ -1,0 +1,25 @@
+{
+  "name": "flapper-news",
+  "homepage": "https://github.com/diegoversiani/flapper-news",
+  "authors": [
+    "diegoversiani <diegoversiani@gmail.com>"
+  ],
+  "description": "A simple posts with upvotes Rails + AngularJS app for learning",
+  "main": "",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "^1.5.7",
+    "angular-ui-router": "^0.3.1",
+    "skeleton-scss": "https://github.com/diegoversiani/Skeleton-Sass.git",
+    "font-awesome": "fontawesome#^4.6.3",
+    "AngularDevise": "angular-devise#^1.3.0"
+  }
+}
