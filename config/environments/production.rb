@@ -79,4 +79,7 @@ Rails.application.configure do
 
   # Use secret key from environment variable
   config.secret_key_base = ENV["SECRET_KEY_BASE"]
+
+  # Set debug log level
+  config.log_level = :debug
 end
