@@ -11,12 +11,10 @@
  * file per style scope.
  *
  *= require_tree .
- *= require_self
  *= require skeleton-scss
- *= require font-awesome
+ *= require _font-awesome-fix
+ *= require_self
  */
-
-$fa-font-path:        "//netdna.bootstrapcdn.com/font-awesome/4.6.3/fonts" !default; // for referencing Bootstrap CDN font files directly
 
 form
 {
