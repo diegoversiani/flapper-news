@@ -2,22 +2,25 @@
 <html>
 <head>
   <title>Flapper News</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <%= stylesheet_link_tag    'application', media: 'all' %>
   <%= javascript_include_tag 'application' %>
   <%= csrf_meta_tags %>
 </head>
 <body ng-app="flapperNews">
 
-  <div class="container">
-    <div class="site-title">
-      <h4>Flapper News</h4>
+  <header class="site-header container">
+    <div class="site-branding">
+      <h4 class="site-title">Flapper News</h4>
     </div>
 
     <div ng-include="'nav/_nav.html'"></div>
+  </header>
+
+  <div class="container">
 
     <div class="message-box">
-       <p class="notice"><%= notice %></p>
-       <p class="alert"><%= alert %></p>
+       <p id="error-message"></p>
     </div>
   	
     <ui-view></ui-view>

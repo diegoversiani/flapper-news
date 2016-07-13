@@ -10,18 +10,40 @@
  * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
  * file per style scope.
  *
- *= require_tree .
- *= require skeleton-scss
  *= require_self
+ *= require font-awesome
+ *= require_tree .
  */
 
-$fa-font-path: "//netdna.bootstrapcdn.com/font-awesome/4.6.3/fonts";
-@import "font-awesome/scss/font-awesome";
+@import "skeleton-scss/scss/skeleton";
 
-form
-{
-    margin-top: 3rem;
+// == Header
+header.site-header {
+  padding-top: 2rem;
 }
+
+.menu,
+.menu-item {
+  margin: 0;
+}
+
+@media (#{$column-starts-at-breakpoint}) {
+  .site-branding {
+    float: left;
+  }
+
+  .navigation {
+    float: right;
+  }
+}
+// !== Header
+
+// == Messages
+.message-box p {
+  text-align: center;
+  color: #f00;
+}
+// !== Messages
 
 .upvotes
 {
@@ -53,5 +75,5 @@ form
 
 .menu__item {
   display: inline-block;
-  margin-left: .5rem;
+  margin: 0 0 0 .5rem;
 }

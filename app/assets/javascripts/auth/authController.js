@@ -6,9 +6,12 @@ angular.module('flapperNews')
     function ($scope, $state, Auth) {
 
       $scope.login = function () {
-        Auth.login($scope.user).then(function() {
-          $state.go('home');
-        });
+        Auth.login($scope.user).then(
+          function() {
+            $state.go('home');
+          },
+          handleError
+        );
       };
 
       $scope.register = function () {
